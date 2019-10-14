@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Band</title>
 </head>
-<body>
+<body style="background-color:rgb(100, 181, 192)">
     <nav class="navbar  navbar-dark bg-dark">
         <a href="/" style="text-decoration: none;"><h3 class="" style="color: #fff">Artist List</h3></a>
         
@@ -30,7 +30,7 @@
         <h2>Edit Band</h2>
         <form action="/editband/{{band.id}}" method="post">
             <div class="form-group">
-                <label for="bandname">Bandname:</label>
+                <label for="bandname">Band Name:</label>
                 <input type="text" class="form-control" id="bandname" placeholder="Enter bandname" name="bandname" value="{{band.bandname}}" required>
             </div>
         

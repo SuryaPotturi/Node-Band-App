@@ -59,8 +59,7 @@ module.exports = {
         }).then(
             band => {
                 band.update({
-                    bandname: bandname,
-                     number_of_members: no_of_members
+                    bandname: bandname
                 }).then(setTimeout(function () {
                     Band.findAll({ where: { userUserId: req.session.userid } }).then(
                         bands => {
